@@ -8,10 +8,12 @@ set cursorline
 set hlsearch
 " Make tabs as wide as two spaces
 set tabstop=2
-" New backup dirs
-set backupdir=~/.vim/backup//
-set directory=~/.vim/swap//
-set undodir=~/.vim/undo//
+" Backups
+set backupdir=~/.vim/backups
+set noswapfile
+if exists("&undodir")
+  set undodir=~/.vim/undo
+endif
 " Themes please
 syntax enable
 " More colors
