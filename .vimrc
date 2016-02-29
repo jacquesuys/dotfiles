@@ -16,6 +16,8 @@ set noerrorbells
 syntax enable
 " More colors
 set t_Co=256 
+" Airline theme
+let g:airline_theme="hybrid" "like dark behelit serene light understated
 " Background dark
 set background=dark
 " Muon
@@ -23,3 +25,4 @@ colorscheme muon
 " Nerdtree ON
 au VimEnter *  NERDTree
 execute pathogen#infect()
+call pathogen#helptags()
