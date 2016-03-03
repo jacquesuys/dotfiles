@@ -23,6 +23,6 @@ set background=dark
 " Muon
 colorscheme muon
 " Nerdtree ON
-au VimEnter *  NERDTree
+:autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | endif
 execute pathogen#infect()
 call pathogen#helptags()
